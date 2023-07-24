@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Only-Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .col-hover:hover{
             color: white;
@@ -17,34 +18,36 @@
 <!----------------Navbar-------------->
 
     <header class="container-fluid bg-dark fixed-top" >
-        <nav class="navbar navbar-expand-sm navbar-dark ">
-            <div class="container">
-                <a class="navbar-brand" href="#">Front-End</a>
-                
-                    <div class="d-flex justify-content-end align-items-center">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ci">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-primary" href="#signup">signup</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse show" id="navbarColor01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#feature">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="#signup">signup</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
 <!----------------carousel-------------->
-    <div id="ci" class="carousel slide mb-5">
+    <div id="ci" class="carousel slide mb-5" style="height: 60%;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#ci" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#ci" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -54,16 +57,16 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201111215809/How-to-Become-a-Front-End-Developer-in-2020.png" class="d-block w-100" style="height: 100vh;">
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201111215809/How-to-Become-a-Front-End-Developer-in-2020.png" class="d-block w-100 img-fluid" >
             </div>
             <div class="carousel-item">
-                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/268175245/original/f05b09642fc41310fa61b7a3dd8bf50bc0e09b03/teach-you-html-css-javascript-react-node-and-much-more.png" class="d-block w-100" style="height: 100vh;">
+                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/268175245/original/f05b09642fc41310fa61b7a3dd8bf50bc0e09b03/teach-you-html-css-javascript-react-node-and-much-more.png" class="d-block w-100 h-80 img-fluid">
             </div>
             <div class="carousel-item">
-                <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="d-block w-100" style="height: 100vh;">
+                <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="d-block w-100" >
             </div>
             <div class="carousel-item">
-                <img src="https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2Fcontent%2Fcover_image_file%2Fcover_image%2F1284735%2Fregular_1708x683_op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-d3a7d3e7430ee224cab75104f11342a0.png" class="d-block w-100" style="height: 100vh;">
+                <img src="https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2Fcontent%2Fcover_image_file%2Fcover_image%2F1284735%2Fregular_1708x683_op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-d3a7d3e7430ee224cab75104f11342a0.png" class="d-block w-100 img-fluid">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#ci" data-bs-slide="prev">
@@ -146,37 +149,62 @@
 
             
             <div class="row text-center p-5">
-                <div class="col-sm-4 rounded p-3 col-hover">
-                    <h3 class="text-dark">HTML</h3>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam asperiores omnis assumenda ex iste recusandae, sint nihil voluptatum dolorem. At nihil, consequatur tempore dolor autem incidunt tempora qui est dignissimos!
+                <div class="col-md-4 mt-2">
+                    <div class="card  col-hover" >
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" class="card-img-top w-100" alt="..." style="height: 300px;"/>
+                        <div class="card-body">
+                            <h3 class="text-dark">HTML</h3>
+                          <p class="card-text">HTML stands for HyperText Markup Language and is the standard markup language for creating web pages.</p>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-sm-4 rounded p-3 col-hover">
-                    <h3 class="text-dark">CSS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor porro reprehenderit explicabo omnis sequi illo minus fugiat, voluptatibus nobis tempora, hic blanditiis nam ea qui fuga mollitia magnam. Laudantium.
-                    </p>
+                <div class="col-md-4 mt-2">
+                    <div class="card  col-hover" >
+                        <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-640x400.png" class="card-img-top w-100" alt="..." style="height: 300px;"/>
+                        <div class="card-body">
+                            <h3 class="text-dark">CSS</h3>
+                          <p class="card-text">CSS (Cascading Style Sheets) is a stylesheet language used to stylize elements written in a markup language such as HTML or XML</p>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-sm-4 rounded p-3 col-hover">
-                    <h3 class="text-dark">
-                        JAVASCRIPT
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor porro reprehenderit explicabo omnis sequi illo minus fugiat, voluptatibus nobis tempora, hic blanditiis nam ea qui fuga mollitia magnam. Laudantium.
-                    </p>
+                <div class="col-md-4 mt-2">
+                    <div class="card  col-hover" >
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" class="card-img-top w-100" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h3 class="text-dark">JavaScript</h3>
+                          <p class="card-text">JavaScript (JS) is a computer programming language used to make websites and applications dynamic and interactive.</p>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="row mb-3 text-center p-5">
-                <div class="col-sm-4 rounded p-3 col-hover">
-                    <h3 class="text-dark">BOOTSTRAP</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem id dolor, libero vero reprehenderit temporibus quia placeat ipsam aliquam ut corporis non ipsa nulla voluptate. Odit maiores similique doloremque.
-                    </p>
+                <div class="col-md-4 mt-2">
+                    <div class="card  col-hover" >
+                        <img src="https://miro.medium.com/v2/resize:fit:400/1*onZhQJU7A3ab6V1sHfMRkQ.jpeg" class="card-img-top w-100" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h3 class="text-dark">Bootstrap</h3>
+                          <p class="card-text">Bootstrap is a free and open-source front-end development framework designed to enable responsive and mobile-first web development.</p>
+                        </div>
+                      </div>
                 </div>
-                <div class="col-sm-4 rounded p-3 col-hover">
-                    <h3 class="text-dark">ANGULAR</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem id dolor, libero vero reprehenderit temporibus quia placeat ipsam aliquam ut corporis non ipsa nulla voluptate. Odit maiores similique doloremque.
-                    </p></div>
-                <div class="col-sm-4 rounded p-3 col-hover">
-                    <h3 class="text-dark">REACT</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem id dolor, libero vero reprehenderit temporibus quia placeat ipsam aliquam ut corporis non ipsa nulla voluptate. Odit maiores similique doloremque.
-                    </p>
+                <div class="col-md-4 mt-2">
+                    <div class="card  col-hover" >
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGakkUEbXyfann4M16v9CV-sTa915cUOdh9g&usqp=CAU" class="card-img-top w-100" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h3 class="text-dark">AngularJS</h3>
+                          <p class="card-text">AngularJS is a JavaScript framework written in JavaScript. AngularJS is distributed as a JavaScript file.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card  col-hover" >
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzNd0m991ZXRKHwXR0_o9dgieNqM7rXy5Ubg&usqp=CAU" class="card-img-top w-100" alt="..." style="height: 300px;">
+                        <div class="card-body">
+                            <h3 class="text-dark">ReactJS</h3>
+                          <p class="card-text">What is ReactJS and why it is used?
+                            The React. js framework is an open-source JavaScript framework and library developed by Facebook.</p>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -232,8 +260,5 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
