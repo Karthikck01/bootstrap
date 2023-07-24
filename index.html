@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Only Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .col-hover:hover{
+            color: white;
+            background: #0d6efd;
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+  <body>
+<!----------------Navbar-------------->
+
+    <header class="container-fluid bg-dark fixed-top" >
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="#">Front-End</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                    <div class="collapse navbar-collapse d-flex justify-content-end align-items-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ci">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="#signup">signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!----------------carousel-------------->
+    <div id="ci" class="carousel slide mb-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#ci" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#ci" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#ci" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#ci" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201111215809/How-to-Become-a-Front-End-Developer-in-2020.png" class="d-block w-100" style="height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/268175245/original/f05b09642fc41310fa61b7a3dd8bf50bc0e09b03/teach-you-html-css-javascript-react-node-and-much-more.png" class="d-block w-100" style="height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" class="d-block w-100" style="height: 100vh;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://assets.toptal.io/images?url=https%3A%2F%2Fbs-uploads.toptal.io%2Fblackfish-uploads%2Fcomponents%2Fblog_post_page%2Fcontent%2Fcover_image_file%2Fcover_image%2F1284735%2Fregular_1708x683_op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-d3a7d3e7430ee224cab75104f11342a0.png" class="d-block w-100" style="height: 100vh;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#ci" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ci" data-bs-slide="next">
+            <span >Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         
+        </button>
+    </div>
+
+
+    <div class="container-fluid my-5 p-5">
+        <div class="container my-5 text-center">
+            <div class="row">
+                <div class="col col-12 col-sm-4">
+                    <h2 class="text-primary">
+                        Design
+                    </h2>
+                    <p>
+                    Design Is Not Just What  
+                    It Looks Like And Feels Like.
+                    Design Is  How It Works...            
+                    </p>                
+                </div>
+                <div class="col col-12 col-sm-4">
+                    <h2 class="text-primary">
+                        Style
+                    </h2> 
+                    <p>
+                     Style Come And Go
+                     Good Design is a Language 
+                     Not a Style...
+                    </p>     
+                </div>
+                <div class="col col-12 col-sm-4">
+                    <h2 class="text-primary">
+                        Creativity
+                    </h2>
+                    <p>
+                        Creativity Is Allowing Yourself
+                        To Make Mistake. Art Is Knowing
+                        Which Once To Keep...
+                    </p>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----------------------About us--------------------->
+
+    <div class="container-fluid py-3 text-secondary text-center">
+        <div class="container text-center" id="about">
+        <h1 class=" text-primary">About-us</h1>
+        <div class="container bg-body-tertiary p-3">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6 py-3">
+                  <div class="h-100 p-5 rounded-3">
+                    <h2 class="text-dark">About Front End Developer</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, quaerat ullam alias optio rem molestiae dolores consequuntur nemo quae autem recusandae quam exercitationem in fugit odio non excepturi deleniti facere.
+                    </p>
+                    <p >
+                        ullam alias optio rem molestiae dolores consequuntur nemo quae autem recusandae quam exercitationem in fugit odio non excepturi deleniti facere.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="h-100 p-5 border rounded-3">
+                    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/268175245/original/f05b09642fc41310fa61b7a3dd8bf50bc0e09b03/teach-you-html-css-javascript-react-node-and-much-more.png" class="img-rounded w-100">
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container text-center mt-2">
+                <h1 class="text-primary">Front-End languages</h1>
+
+            
+            <div class="row text-center p-5">
+                <div class="col-sm-4 rounded p-3 col-hover">
+                    <h3 class="text-dark">HTML</h3>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam asperiores omnis assumenda ex iste recusandae, sint nihil voluptatum dolorem. At nihil, consequatur tempore dolor autem incidunt tempora qui est dignissimos!
+                </div>
+                <div class="col-sm-4 rounded p-3 col-hover">
+                    <h3 class="text-dark">CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor porro reprehenderit explicabo omnis sequi illo minus fugiat, voluptatibus nobis tempora, hic blanditiis nam ea qui fuga mollitia magnam. Laudantium.
+                    </p>
+                </div>
+                <div class="col-sm-4 rounded p-3 col-hover">
+                    <h3 class="text-dark">
+                        JAVASCRIPT
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor porro reprehenderit explicabo omnis sequi illo minus fugiat, voluptatibus nobis tempora, hic blanditiis nam ea qui fuga mollitia magnam. Laudantium.
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-3 text-center p-5">
+                <div class="col-sm-4 rounded p-3 col-hover">
+                    <h3 class="text-dark">BOOTSTRAP</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem id dolor, libero vero reprehenderit temporibus quia placeat ipsam aliquam ut corporis non ipsa nulla voluptate. Odit maiores similique doloremque.
+                    </p>
+                </div>
+                <div class="col-sm-4 rounded p-3 col-hover">
+                    <h3 class="text-dark">ANGULAR</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem id dolor, libero vero reprehenderit temporibus quia placeat ipsam aliquam ut corporis non ipsa nulla voluptate. Odit maiores similique doloremque.
+                    </p></div>
+                <div class="col-sm-4 rounded p-3 col-hover">
+                    <h3 class="text-dark">REACT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem id dolor, libero vero reprehenderit temporibus quia placeat ipsam aliquam ut corporis non ipsa nulla voluptate. Odit maiores similique doloremque.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 text-center">
+        <h1 class="text-primary">TESTIMONIAL</h1>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="my-4">Person A</h2>
+                  <img class="rounded-circle mt-4" src="https://png.pngtree.com/png-vector/20200614/ourlarge/pngtree-businessman-user-avatar-character-vector-illustration-png-image_2242909.jpg" width="140" height="140" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, eos obcaecati consequuntur cumque voluptas sed corrupti pariatur </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="my-4">Person B</h2>
+                    <img class="rounded-circle mt-4" src="https://png.pngtree.com/png-vector/20220709/ourlarge/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" width="140" height="140" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, eos obcaecati consequuntur cumque voluptas sed corrupti pariatur </p>                  </div>
+                  <div class="col-lg-4">
+                    <h2 class="my-4">Person C</h2>
+                    <img class="rounded-circle mt-4" src="https://st3.depositphotos.com/1007566/12989/v/450/depositphotos_129895116-stock-illustration-hacker-character-avatar-icon.jpg" width="140" height="140" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus, eos obcaecati consequuntur cumque voluptas sed corrupti pariatur </p>                  </div>
+              </div>
+        </div>
+        </div>
+        <div class="container mt-5 d-flex justify-content-center align-items-center flex-column" style="height: 100vh;" id="contact">
+
+            <h1 class="text-primary">CONTACT</h1>
+
+            <div class="form d-flex justify-content-center align-items-center">
+                <form onsubmit="alert(`Thank you ${this.firstname.value} your form Submitted successfully`)" class="text-bg-dark p-3 rounded">
+                    <div class="my-3">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" name="firstname" class="form-control" id="first-name" placeholder="first-name" required>
+                      </div>
+                      <div class="my-3">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" name="lastname" class="form-control" id="last-name" placeholder="last-name" required>
+                      </div>
+                      <div class="my-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="sample@gmail.com" required>
+                      </div>
+                      <div class="my-3">
+                        <label for="text-area" class="form-label">Messege</label>
+                        <textarea class="form-control" name="text-area" id="text-area" cols="60" rows="1" placeholder="write your messege here" required></textarea>
+                      </div>
+                      <div class="my-3">
+                        <input type="submit" class="form-control btn btn-primary" value="Submit">
+                    </div>
+                      
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
